@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: service2
+  profiles:
+    active: profile1
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1.shiwen.com:1111/eureka,http://eureka2.shiwen.com:1112/eureka
+
+
+---
+spring:
+  profiles: profile1
+server:
+  port: 8003
+from: profile1
+
+---
+spring:
+  profiles: profile2
+server:
+  port: 8004
+from: profile2
