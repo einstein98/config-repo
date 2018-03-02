@@ -14,11 +14,11 @@ spring:
   profiles: profile1
 server:
   port: 8003
-from: profile1
+from: config1
 
 ---
 spring:
   profiles: profile2
 server:
   port: 8004
-from: profile2
+from: config2
