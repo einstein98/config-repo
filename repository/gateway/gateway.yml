@@ -1,0 +1,11 @@
+server:
+  port: 7777
+
+zuul:
+  routes:
+    server1:
+      path: /service1/**
+      serviceId: service1
+    server2:
+      path: /service2/**
+      serviceId: service2
