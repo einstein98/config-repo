@@ -21,4 +21,4 @@ spring:
   profiles: profile2
 server:
   port: 8004
-from: HELLO2
+from: HELLO
